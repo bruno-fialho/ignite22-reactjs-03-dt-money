@@ -16,7 +16,7 @@ export const HeaderContent = styled.div`
   justify-content: space-between;
 `
 
-export const NewTransactionButton = styled.div`
+export const NewTransactionButton = styled.button`
   height: 50px;
   border: 0;
   background-color: ${props => props.theme['green-500']};
