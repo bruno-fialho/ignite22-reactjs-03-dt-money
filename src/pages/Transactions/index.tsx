@@ -1,13 +1,13 @@
-import { useContext } from "react";
+import { useContext } from 'react'
 
-import { dateFormatter, priceFormatter } from "../../utils/formatter";
-import { TransactionsContext } from "../../contexts/TransactionsContext";
+import { dateFormatter, priceFormatter } from '../../utils/formatter'
+import { TransactionsContext } from '../../contexts/TransactionsContext'
 
-import { Header } from "../../components/Header";
-import { Summary } from "../../components/Summary";
-import { SearchForm } from "./components/SearchForm";
+import { Header } from '../../components/Header'
+import { Summary } from '../../components/Summary'
+import { SearchForm } from './components/SearchForm'
 
-import { PriceHighlight, TransactionsTable, TransactionWrapper } from "./styles";
+import { PriceHighlight, TransactionsTable, TransactionWrapper } from './styles'
 
 export function Transactions() {
   const { transactions } = useContext(TransactionsContext)
@@ -22,8 +22,8 @@ export function Transactions() {
 
         <TransactionsTable>
           <tbody>
-            {transactions.map(transaction => (
-              <tr key={transaction.id}> 
+            {transactions.map((transaction) => (
+              <tr key={transaction.id}>
                 <td width="50%">{transaction.description}</td>
                 <td>
                   <PriceHighlight variant={transaction.type}>
