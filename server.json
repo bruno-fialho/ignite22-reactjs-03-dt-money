@@ -6,14 +6,22 @@
       "type": "income",
       "category": "Venda",
       "price": 14000,
-      "createdAt": "2022-10-04T09:05:55.684Z"
+      "createdAt": "2022-10-03T09:05:55.684Z"
     },
     {
       "id": 2,
-      "description": "Pizza",
+      "description": "Hamburger",
       "type": "outcome",
       "category": "Alimentação",
       "price": 50,
+      "createdAt": "2022-10-04T10:05:55.684Z"
+    },
+    {
+      "id": 3,
+      "description": "Pizza",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 80,
       "createdAt": "2022-10-05T01:05:55.684Z"
     }
   ]
